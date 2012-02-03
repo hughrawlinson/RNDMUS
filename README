@@ -1,0 +1,33 @@
+======
+RNDMUS
+======
+
+About
+=====
+RNDMUS is a Python module to facilitate granular audio shuffling. It selects a random sample in the input file, and takes the following n samples where n is an argument. It then adds these to the end of the resulting output file until the file reaches the length specified in an argument.
+
+At the moment, WAV is the only supported audio format, however there are plans to add support for AIFF, FLAC, and MP3. Other popular audio formats may be considered.
+
+There are also plans to add other kinds of audio shuffling functions in later versions.
+
+Usage
+=====
+RNDMUS.process() is the main method. There are plans to add other kinds of audio shuffling methods in later versions. This method should be executed in the form:
+
+RNDMUS.process(inputFile,outputFile,grainLength,sampLength)
+
+where
+
+inputFile = path to input file
+outputFile = path to output file
+grainLength = the length of a single 'card' to shuffle
+sampLength = the length of the output file
+
+
+Version Notes
+=============
+This version has implemented basic functonality, and is intended for public testing. A pre-compiled .pyc file has been included for ease of use.
+
+Copyright Notice
+================
+Copyright Hugh Rawlinson, 2012. The code is open source. It may be used freely in open source software. When used, it must be attributed, and the using program must be open source. I reserve the right to profit from this software, and to use it in my own projects that may be commercial, proprietary, and closed-sourced.
